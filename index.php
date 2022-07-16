@@ -1,24 +1,14 @@
-<?php
+<script src="assets/vue/vue.global.js"></script>
 
-?>
+<div id="app"><h1>{{m}}</h1></div>
 
-<script type="importmap">
-  {
-    "imports": {
-      "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.js"
-    }
-  }
-</script>
-
-<div id="app">{{ message }}</div>
-
-<script type="module">
-  import { createApp } from 'vue'
+<script>
+  const {createApp} = Vue
 
   createApp({
     data() {
       return {
-        message: 'Hello Vue!'
+        m: 'madgear'
       }
     }
   }).mount('#app')
